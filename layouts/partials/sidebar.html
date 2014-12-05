@@ -7,14 +7,24 @@
 
         <nav class="nav">
             <ul class="nav-list">
-                {{ with .Site.Params.twitter }}
-                <li class="nav-item">
-                    <a class="pure-button" href="http://twitter.com/{{ . }}"><i class="fa fa-twitter"></i> Twitter</a>
-                </li>
-                {{ end }}
                 {{ with .Site.Params.github }}
                 <li class="nav-item">
-                    <a class="pure-button" href="http://github.com/{{ . }} "><i class="fa fa-github-alt"></i> github</a>
+                    <a class="pure-button" href="http://github.com/{{ . }} "><i class="fa fa-github-square"></i> github</a>
+                </li>
+                {{ end }}
+                {{ with .Site.Params.linkedin }}
+                <li class="nav-item">
+                    <a class="pure-button" href="http://www.linkedin.com/in/{{ . }} "><i class="fa fa-linkedin-square"></i> linkedin</a>
+                </li>
+                {{ end }}
+                {{ with .Site.Params.facebook }}
+                <li class="nav-item">
+                    <a class="pure-button" href="http://www.facebook.com/{{ . }} "><i class="fa fa-facebook-square"></i> facebook</a>
+                </li>
+                {{ end }}
+                {{ with .Site.Params.twitter }}
+                <li class="nav-item">
+                    <a class="pure-button" href="http://twitter.com/{{ . }}"><i class="fa fa-twitter-square"></i> twitter</a>
                 </li>
                 {{ end }}
             </ul>
